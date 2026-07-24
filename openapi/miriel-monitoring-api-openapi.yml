@@ -1,0 +1,50 @@
+openapi: 3.1.0
+info:
+  title: Miriel Context Engine Documents Monitoring API
+  version: v2
+  description: Miriel is the context engine and platform for AI-native development. The API lets applications and agents learn from any data source and query relevant context in real time, with LLM-, vector-, and graph-based retrieval, per-token permissions (grant IDs), and encryption. This description is a faithful derivation of the official TypeScript SDK (@miriel/miriel v0.1.0); Miriel does not publish a machine-readable OpenAPI document at a public URL.
+  contact:
+    name: Miriel
+    url: https://miriel.ai
+  x-derived-from: npm @miriel/miriel v0.1.0 (dist type definitions + compiled client)
+servers:
+- url: https://api.prod.miriel.ai
+  description: Production
+security:
+- accessToken: []
+tags:
+- name: Monitoring
+paths:
+  /api/v2/get_monitor_jobs:
+    post:
+      operationId: getLearningJobs
+      summary: List learning / monitor jobs
+      tags:
+      - Monitoring
+      responses:
+        '200':
+          description: Job list
+  /api/v2/get_monitor_sources:
+    post:
+      operationId: getMonitorSources
+      summary: List monitored sources
+      tags:
+      - Monitoring
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+      responses:
+        '200':
+          description: Monitored sources
+components:
+  securitySchemes:
+    accessToken:
+      type: apiKey
+      in: header
+      name: x-access-token
+      description: API key issued from the Miriel dashboard, sent in the x-access-token header.
