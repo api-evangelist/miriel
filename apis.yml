@@ -1,8 +1,15 @@
 aid: miriel
 name: Miriel
-description: 'Miriel is a company surfaced as a portfolio company of foundry-group and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Miriel is the context engine and platform for AI-native development. It gives
+  AI apps and agents the context they need in real time through a simple API:
+  developers connect a data source with the learn operation and retrieve relevant
+  context with the query operation, backed by LLM, vector, and knowledge-graph
+  retrieval. Every interaction is encrypted and permissions are managed at the
+  token level (per-user grants and policies). Built by a team with backgrounds
+  across Google, Tesla, Facebook, and Posit, Miriel handles intelligent indexing
+  and retrieval tailored to each source, plus Labs projects (Nora, Floodlight)
+  and tools like Autodev and NexusBuild. Backed by Foundry Group.
 url: https://raw.githubusercontent.com/api-evangelist/miriel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +17,230 @@ x-backed-by:
 - foundry-group
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://miriel.ai/MirielLogoWhiteNoTextOnBlue.svg
 tags:
 - Company
 - Ai
-apis: []
+- Context Engine
+- Retrieval
+- RAG
+- Knowledge Graph
+- Vector Search
+- Agents
+- LLM
+- Developer Tools
+apis:
+- aid: miriel:miriel-documents-api
+  name: Miriel Documents API
+  description: The Documents API from Miriel — 8 operation(s) for documents.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-documents-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
+- aid: miriel:miriel-learn-api
+  name: Miriel Learn API
+  description: The Learn API from Miriel — 1 operation(s) for learn.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Learn
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-learn-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
+- aid: miriel:miriel-monitoring-api
+  name: Miriel Monitoring API
+  description: The Monitoring API from Miriel — 2 operation(s) for monitoring.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Monitoring
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-monitoring-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
+- aid: miriel:miriel-policies-api
+  name: Miriel Policies API
+  description: The Policies API from Miriel — 3 operation(s) for policies.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Policies
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-policies-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
+- aid: miriel:miriel-projects-api
+  name: Miriel Projects API
+  description: The Projects API from Miriel — 3 operation(s) for projects.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-projects-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
+- aid: miriel:miriel-query-api
+  name: Miriel Query API
+  description: The Query API from Miriel — 1 operation(s) for query.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Query
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-query-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
+- aid: miriel:miriel-users-api
+  name: Miriel Users API
+  description: The Users API from Miriel — 3 operation(s) for users.
+  humanURL: https://miriel.ai/docs
+  baseURL: https://api.prod.miriel.ai
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/miriel-users-api-openapi.yml
+  - type: Authentication
+    url: authentication/miriel-authentication.yml
+  - type: AgenticAccess
+    url: agentic-access/miriel-agentic-access.yml
+  - type: Conventions
+    url: conventions/miriel-conventions.yml
+  - type: DataModel
+    url: data-model/miriel-data-model.yml
+  - type: Conformance
+    url: conformance/miriel-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DeveloperPortal
+  url: https://miriel.ai/docs
+- type: Documentation
+  url: https://miriel.ai/docs
+- type: APIReference
+  url: https://miriel.ai/docs
+- type: Blog
+  url: https://miriel.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/miriel-ai
+- type: SignUp
+  url: https://app.miriel.ai
+- type: Login
+  url: https://app.miriel.ai
+- type: LLMsTxt
+  url: llms/miriel-llms.txt
+- type: OpenAPI
+  url: openapi/miriel-openapi.yml
+- type: Overlay
+  url: overlays/miriel-overlay.yaml
+- type: Authentication
+  url: authentication/miriel-authentication.yml
+- type: AgenticAccess
+  url: agentic-access/miriel-agentic-access.yml
+- type: Conventions
+  url: conventions/miriel-conventions.yml
+- type: DataModel
+  url: data-model/miriel-data-model.yml
+- type: Conformance
+  url: conformance/miriel-conformance.yml
+- type: Packages
+  url: packages/miriel-packages.yml
+- type: SDKs
+  url: packages/miriel-packages.yml
+- type: MCPServer
+  url: mcp/miriel-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: WellKnown
+  url: well-known/miriel-well-known.yml
+- type: Lifecycle
+  url: lifecycle/miriel-lifecycle.yml
+- type: StatusPage
+  url: https://status.miriel.ai
+- type: DomainSecurity
+  url: security/miriel-domain-security.yml
 - type: Website
   url: https://miriel.ai
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 16
+  pass: local-v1
