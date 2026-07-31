@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/miriel-openapi.yml + https://miriel.ai/llms.txt + official SDK
+authentication:
+  style: api-key
+  header: x-access-token
+  note: API key issued from the Miriel dashboard.
+  ref: authentication/miriel-authentication.yml
+transport:
+  style: rpc
+  http_method: POST
+  base_path: /api/v2/
+  content_type: application/json
+  note: >-
+    RPC-style JSON over HTTPS. Operations are verbs (query, learn, create_user,
+    …) rather than REST resources; learn accepts multipart/form-data for file
+    uploads.
+permissions:
+  model: token-level grants
+  mechanism: grant_ids on documents plus per-user policies (add_user_policy)
+  note: >-
+    Access is scoped per user_id and per grant ID; documents can be marked
+    discoverable and shared via grant_ids. Every interaction is encrypted
+    (per https://miriel.ai/llms.txt).
+idempotency:
+  supported: false
+  note: No idempotency-key mechanism is documented in the SDK or docs.
+pagination:
+  style: unknown
+  note: No pagination parameters are exposed in the SDK-derived surface.
+async_jobs:
+  note: >-
+    learn returns a job that can be polled; get_monitor_jobs lists learning jobs
+    and the SDK exposes wait_for_complete / polling_interval helpers.
+error_handling:
+  ref: null
+  note: The SDK raises on non-2xx responses; no structured error envelope is documented.

@@ -1,0 +1,26 @@
+{
+  "provider": "miriel",
+  "sources": [
+    "miriel-documents-api-openapi.yml",
+    "miriel-learn-api-openapi.yml",
+    "miriel-monitoring-api-openapi.yml",
+    "miriel-policies-api-openapi.yml",
+    "miriel-projects-api-openapi.yml",
+    "miriel-query-api-openapi.yml",
+    "miriel-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "miriel-documents-api-openapi.yml",
+    "miriel-learn-api-openapi.yml",
+    "miriel-monitoring-api-openapi.yml",
+    "miriel-policies-api-openapi.yml",
+    "miriel-projects-api-openapi.yml",
+    "miriel-query-api-openapi.yml",
+    "miriel-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

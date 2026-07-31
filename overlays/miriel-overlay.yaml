@@ -1,0 +1,18 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Miriel Context Engine API
+  version: 1.0.0
+extends: openapi/miriel-openapi.yml
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-network: https://apis.io/provider/miriel
+      x-apievangelist-notes: >-
+        Derived from the official @miriel/miriel TypeScript SDK; Miriel publishes
+        no machine-readable OpenAPI. Auth is an API key sent in the x-access-token
+        header. All operations are POST RPC-style calls under /api/v2/.
+  - target: $.info
+    update:
+      x-authentication: authentication/miriel-authentication.yml
+      x-agentic-access: agentic-access/miriel-agentic-access.yml
+      x-data-model: data-model/miriel-data-model.yml

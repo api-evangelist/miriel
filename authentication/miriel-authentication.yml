@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/miriel-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: accessToken
+  type: apiKey
+  in: header
+  parameter: x-access-token
+  description: API key issued from the Miriel dashboard, sent in the x-access-token header.
+  sources:
+  - openapi/miriel-openapi.yml

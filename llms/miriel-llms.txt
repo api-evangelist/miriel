@@ -1,0 +1,38 @@
+---
+generated: '2026-07-20'
+method: searched
+source: https://miriel.ai/llms.txt
+---
+# Miriel
+
+> Miriel is the context engine and platform for AI-native development: it gives AI apps and agents the context they need in real time, through a simple API, with every interaction encrypted and permissions managed at the token level.
+
+Miriel is built by a team with backgrounds across Google, Tesla, Facebook, and Posit. The platform handles intelligent indexing and retrieval tailored to each data source, so developers can build personalized, auditable AI applications in minutes instead of months.
+
+## Pages
+
+- [Home](https://miriel.ai/): product overview and beta early-access signup
+- [Docs](https://miriel.ai/docs): client libraries and API documentation
+- [About](https://miriel.ai/about): team, advisors, and investors
+- [Blog](https://miriel.ai/blog): engineering deep-dives and product notes
+- [Nora (Labs)](https://miriel.ai/labs/nora): a research preview of an operating system organized around an agent instead of a desktop
+- [Floodlight (Labs)](https://miriel.ai/labs/floodlight): a research preview of natural-language search for your Mac — ask for files and apps in plain language
+- [NexusBuild](https://miriel.ai/nexusbuild): shows small-business owners what their website is built on, who controls it, and how to take ownership back — even if they have lost every login. Strictly read-only, scans only public data.
+
+## Blog posts
+
+- [From 40 Million Tokens to a 450K-Token Graph: How Miriel Distills What It Learns](https://miriel.ai/blog/from-40-million-tokens-to-a-450k-token-graph-how-miriel-distills-what-it-learns): Every document Miriel learns is distilled into knowledge-graph triples by a small model, once, at write time. The result is ~89x compression
+- [Code against the environment you need](https://miriel.ai/blog/code-against-the-environment-you-need)
+- [You Shouldn't Need a $1,000 Consultant to Change Your Own Website](https://miriel.ai/blog/you-shouldnt-need-a-1000-consultant-to-change-your-own-website): Editing your own WordPress site still means paying an agency four figures and waiting weeks. In the age of AI, that's absurd. NexusBuild und
+- [Nora at Work: A Visual Tour of the Floodlight Preview](https://miriel.ai/blog/nora-at-work-a-visual-tour-of-the-floodlight-preview): We've written about how Nora is built — a reactive Voice and a deliberative Supervisor meeting at a blackboard. This time, we show her worki
+- [Separating Dialogue from Deliberation: Nora's Two-Process Architecture](https://miriel.ai/blog/separating-dialogue-from-deliberation): A conversational agent that also does long-horizon work has to reconcile two incompatible clocks. Nora — the agent inside Floodlight — resol
+- [Augmenting your AI coding agent with Miriel](https://miriel.ai/blog/augmenting-your-ai-coding-agent-with-miriel): An autodev agent reads your repo and GitHub for free; the things it gets wrong live everywhere else. Here's the integration pattern, and a r
+- [Scaling Homomorphically Encrypted Face Search to 10 Million Vectors on GPUs](https://miriel.ai/blog/scaling-homomorphically-encrypted-face-search-to-10-million-vectors-on-gpus): Building on an FHE facial-matching pipeline, we fixed a recall bug in the GPU search path, cut single-query latency by 3.4x, and scaled the 
+- [Accelerating Video-to-Vector Ingest to 8,000 Vectors per Second per Node](https://miriel.ai/blog/accelerating-video-to-vector-ingest-to-8000-vectors-per-second-per-node)
+- [Searching 100 Billion Encrypted Video Vectors: Why Search Latency Didn't Budge With Scale](https://miriel.ai/blog/100-billion-encrypted-video-vectors)
+
+## Contact
+
+- Early access & contact: https://miriel.ai/ (signup form)
+- LinkedIn: https://www.linkedin.com/company/miriel-ai
+- Dashboard (product): https://app.miriel.ai

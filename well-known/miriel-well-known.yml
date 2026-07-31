@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/* on Miriel hosts
+hosts:
+  - host: https://miriel.ai
+    documents:
+      - { path: /.well-known/security.txt, status: 404 }
+      - { path: /.well-known/openid-configuration, status: 404 }
+      - { path: /.well-known/oauth-authorization-server, status: 404 }
+      - { path: /.well-known/api-catalog, status: 404 }
+      - { path: /.well-known/ai-plugin.json, status: 404 }
+  - host: https://api.prod.miriel.ai
+    note: API host derived from the official SDK; not probed for well-known documents.
+  - host: https://app.miriel.ai
+    documents:
+      - { path: /.well-known/security.txt, status: 404 }
+      - { path: /.well-known/openid-configuration, status: 404 }
+result: none
+notes: No /.well-known discovery documents are published on any probed Miriel host.

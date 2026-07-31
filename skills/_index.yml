@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: generated
+source: openapi/miriel-openapi.yml (operationIds verified against the official SDK)
+skills:
+  - file: miriel-learn-and-query.md
+    name: Learn a source and query context
+    api: openapi/miriel-openapi.yml
+    operations: [learn, getLearningJobs, query]
+  - file: miriel-manage-access.md
+    name: Manage users and document access
+    api: openapi/miriel-openapi.yml
+    operations: [createUser, setDocumentAccess, getAllDocuments, addUserPolicy]

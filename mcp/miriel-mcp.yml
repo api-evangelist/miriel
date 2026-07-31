@@ -1,0 +1,75 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: openapi/miriel-openapi.yml
+notes: >-
+  No official hosted/remote MCP server was found for Miriel. This is a candidate
+  tool list derived one-to-one from the API operations (from the official SDK) so
+  an MCP server could be generated.
+server:
+  name: miriel
+  transport: http
+tools:
+  - name: query
+    description: Query the context engine for relevant context (LLM/vector/graph).
+    source_operation: openapi/miriel-openapi.yml#query
+  - name: learn
+    description: Learn from an input or data source into the context engine.
+    source_operation: openapi/miriel-openapi.yml#learn
+  - name: get_learning_jobs
+    description: List learning / monitor jobs.
+    source_operation: openapi/miriel-openapi.yml#getLearningJobs
+  - name: get_monitor_sources
+    description: List monitored sources.
+    source_operation: openapi/miriel-openapi.yml#getMonitorSources
+  - name: update_document
+    description: Update a document's metadata or access.
+    source_operation: openapi/miriel-openapi.yml#updateDocument
+  - name: get_document_by_id
+    description: Get a document by ID.
+    source_operation: openapi/miriel-openapi.yml#getDocumentById
+  - name: get_all_documents
+    description: List documents.
+    source_operation: openapi/miriel-openapi.yml#getAllDocuments
+  - name: get_document_count
+    description: Count documents.
+    source_operation: openapi/miriel-openapi.yml#getDocumentCount
+  - name: remove_document
+    description: Remove a document.
+    source_operation: openapi/miriel-openapi.yml#removeDocument
+  - name: remove_all_documents
+    description: Remove all documents.
+    source_operation: openapi/miriel-openapi.yml#removeAllDocuments
+  - name: remove_resource
+    description: Remove a resource.
+    source_operation: openapi/miriel-openapi.yml#removeResource
+  - name: set_document_access
+    description: Set document access grants.
+    source_operation: openapi/miriel-openapi.yml#setDocumentAccess
+  - name: create_user
+    description: Create a user.
+    source_operation: openapi/miriel-openapi.yml#createUser
+  - name: get_users
+    description: List users.
+    source_operation: openapi/miriel-openapi.yml#getUsers
+  - name: delete_user
+    description: Delete a user.
+    source_operation: openapi/miriel-openapi.yml#deleteUser
+  - name: get_projects
+    description: List projects.
+    source_operation: openapi/miriel-openapi.yml#getProjects
+  - name: create_project
+    description: Create a project.
+    source_operation: openapi/miriel-openapi.yml#createProject
+  - name: delete_project
+    description: Delete a project.
+    source_operation: openapi/miriel-openapi.yml#deleteProject
+  - name: get_user_policies
+    description: List user policies.
+    source_operation: openapi/miriel-openapi.yml#getUserPolicies
+  - name: add_user_policy
+    description: Add a user policy.
+    source_operation: openapi/miriel-openapi.yml#addUserPolicy
+  - name: delete_user_policy
+    description: Delete a user policy.
+    source_operation: openapi/miriel-openapi.yml#deleteUserPolicy

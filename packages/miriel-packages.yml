@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: npm registry (registry.npmjs.org) — @miriel scope
+packages:
+  - language: javascript
+    registry: npm
+    name: "@miriel/miriel"
+    url: https://www.npmjs.com/package/@miriel/miriel
+    install: npm install @miriel/miriel
+    version: 0.1.0
+    license: MIT
+    repository: https://github.com/miriel-ai/miriel-js
+    description: Official TypeScript SDK for the Miriel API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@miriel/n8n-nodes-miriel-ai"
+    url: https://www.npmjs.com/package/@miriel/n8n-nodes-miriel-ai
+    install: npm install @miriel/n8n-nodes-miriel-ai
+    version: 0.1.2
+    description: n8n community node for Miriel AI integration.
+    official: true

@@ -1,0 +1,52 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/miriel-openapi.yml (id-reference fields from the official SDK)
+entities:
+  - name: User
+    id_field: user_id
+    operations: [createUser, getUsers, deleteUser]
+  - name: Document
+    id_field: document_id
+    operations: [getDocumentById, getAllDocuments, updateDocument, removeDocument, getDocumentCount, setDocumentAccess]
+  - name: Resource
+    id_field: resource_id
+    operations: [removeResource]
+  - name: Project
+    id_field: project_id
+    operations: [getProjects, createProject, deleteProject]
+  - name: Policy
+    id_field: policy_id
+    operations: [getUserPolicies, addUserPolicy, deleteUserPolicy]
+  - name: Grant
+    id_field: grant_ids
+    note: Access grant identifiers attached to documents to control visibility.
+  - name: LearningJob
+    operations: [learn, getLearningJobs]
+  - name: MonitorSource
+    operations: [getMonitorSources]
+relationships:
+  - from: Document
+    to: User
+    type: belongs_to
+    via: user_id
+  - from: Document
+    to: Grant
+    type: has_many
+    via: grant_ids
+  - from: Policy
+    to: User
+    type: belongs_to
+    via: user_id
+  - from: Policy
+    to: Project
+    type: belongs_to
+    via: project_id
+  - from: LearningJob
+    to: Document
+    type: has_one
+    via: document_id
+    note: A learn job produces a document.
+  - from: MonitorSource
+    to: User
+    type: belongs_to
+    via: user_id
