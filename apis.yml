@@ -208,7 +208,7 @@ common:
 - type: LLMsTxt
   url: llms/miriel-llms.txt
 - type: OpenAPI
-  url: openapi/miriel-openapi.yml
+  url: openapi/_original/miriel-openapi.yml
 - type: Overlay
   url: overlays/miriel-overlay.yaml
 - type: Authentication
