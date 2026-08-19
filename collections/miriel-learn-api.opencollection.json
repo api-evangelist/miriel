@@ -1,0 +1,102 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Miriel Context Engine Documents Learn API",
+    "version": "v2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-access-token",
+      "value": "{{x-access-token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Learn",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Learn from an input or data source",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/learn",
+            "body": {
+              "type": "multipart-form",
+              "data": [
+                {
+                  "name": "input",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "user_id",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "metadata",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "force_string",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "discoverable",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "grant_ids",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "domain_restrictions",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "recursion_depth",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "priority",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "project",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "chunk_size",
+                  "type": "text",
+                  "value": ""
+                },
+                {
+                  "name": "polling_interval",
+                  "type": "text",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "docs": "Ingest and index content (string or file/URL source) into the context engine."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

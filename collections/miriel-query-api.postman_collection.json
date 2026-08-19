@@ -1,0 +1,144 @@
+{
+  "item": [
+    {
+      "id": "02f0cb6e-2fa4-4e43-a2f4-1174c6a08928",
+      "name": "Query",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "22bea757-13a0-479b-90f6-658e9c799954",
+          "name": "Query for relevant context",
+          "request": {
+            "name": "Query for relevant context",
+            "description": {
+              "content": "Retrieve relevant context for a query using LLM, vector, and/or graph retrieval.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "query"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"user_id\": \"<string>\",\n  \"input_images\": \"\",\n  \"response_format\": \"\",\n  \"metadata_query\": \"\",\n  \"num_results\": \"<integer>\",\n  \"want_llm\": \"<boolean>\",\n  \"want_vector\": \"<boolean>\",\n  \"want_graph\": \"<boolean>\",\n  \"mock_response\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "82e29c57-f011-4583-8dc7-227ae9b620a3",
+              "name": "Query results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "query"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-access-token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"<string>\",\n  \"user_id\": \"<string>\",\n  \"input_images\": \"\",\n  \"response_format\": \"\",\n  \"metadata_query\": \"\",\n  \"num_results\": \"<integer>\",\n  \"want_llm\": \"<boolean>\",\n  \"want_vector\": \"<boolean>\",\n  \"want_graph\": \"<boolean>\",\n  \"mock_response\": \"\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.prod.miriel.ai",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-access-token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "baaf1325-a68b-453a-8d2b-421a695348d3",
+    "name": "Miriel Context Engine Documents Query API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Miriel is the context engine and platform for AI-native development. The API lets applications and agents learn from any data source and query relevant context in real time, with LLM-, vector-, and graph-based retrieval, per-token permissions (grant IDs), and encryption. This description is a faithful derivation of the official TypeScript SDK (@miriel/miriel v0.1.0); Miriel does not publish a machine-readable OpenAPI document at a public URL.\n\nContact Support:\n Name: Miriel",
+      "type": "text/plain"
+    }
+  }
+}

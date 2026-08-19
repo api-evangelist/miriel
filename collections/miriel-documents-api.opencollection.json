@@ -1,0 +1,142 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Miriel Context Engine Documents API",
+    "version": "v2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-access-token",
+      "value": "{{x-access-token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Documents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Update a document's metadata or access",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/update_document",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a document's metadata or access"
+        },
+        {
+          "info": {
+            "name": "Get a document by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/get_document_by_id",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get a document by ID"
+        },
+        {
+          "info": {
+            "name": "List documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/get_all_documents",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "List documents"
+        },
+        {
+          "info": {
+            "name": "Count documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/get_document_count"
+          },
+          "docs": "Count documents"
+        },
+        {
+          "info": {
+            "name": "Remove a document",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/remove_document",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Remove a document"
+        },
+        {
+          "info": {
+            "name": "Remove all documents",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/remove_all_documents",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Remove all documents"
+        },
+        {
+          "info": {
+            "name": "Remove a resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/remove_resource",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Remove a resource"
+        },
+        {
+          "info": {
+            "name": "Set document access grants",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prod.miriel.ai/api/v2/set_document_access",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Set document access grants"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
