@@ -35,6 +35,17 @@ modified: '2026-07-20'
 image: https://miriel.ai/MirielLogoWhiteNoTextOnBlue.svg
 tags:
 - Company
+- Artificial Intelligence
+- Context Engine
+- Retrieval
+- RAG
+- Knowledge Graph
+- Vector Search
+- Agents
+- LLM
+- Developer Tools
+tags_raw:
+- Company
 - Ai
 - Context Engine
 - Retrieval
@@ -131,6 +142,8 @@ apis:
   humanURL: https://miriel.ai/docs
   baseURL: https://api.prod.miriel.ai
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
@@ -171,6 +184,8 @@ apis:
   humanURL: https://miriel.ai/docs
   baseURL: https://api.prod.miriel.ai
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
