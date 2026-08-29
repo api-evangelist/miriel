@@ -21,6 +21,15 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
+  "notes": [
+    "miriel-documents-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "miriel-learn-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "miriel-monitoring-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "miriel-policies-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "miriel-projects-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "miriel-query-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "miriel-users-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
   "skipped": []
 }
