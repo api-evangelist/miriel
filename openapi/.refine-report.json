@@ -1,13 +1,7 @@
 {
   "provider": "miriel",
   "sources": [
-    "miriel-documents-api-openapi.yml",
-    "miriel-learn-api-openapi.yml",
-    "miriel-monitoring-api-openapi.yml",
-    "miriel-policies-api-openapi.yml",
-    "miriel-projects-api-openapi.yml",
-    "miriel-query-api-openapi.yml",
-    "miriel-users-api-openapi.yml"
+    "_ae-authored/miriel-openapi.yml"
   ],
   "outputs": [
     "miriel-documents-api-openapi.yml",
@@ -22,14 +16,17 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "miriel-documents-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "miriel-learn-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "miriel-monitoring-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "miriel-policies-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "miriel-projects-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "miriel-query-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "miriel-users-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "miriel-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "miriel-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "miriel-learn-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "miriel-monitoring-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "miriel-policies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "miriel-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "miriel-query-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "miriel-users-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
